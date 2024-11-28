@@ -1,0 +1,364 @@
+body {
+    background-color: #000; /* Sets the background color to black */
+}
+
+.main {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 50%; /* Centers the element vertically */
+    left: 50%; /* Centers the element horizontally */
+    height: 1px; /* Minimal height */
+    width: 1px; /* Minimal width */
+    background-color: #fff; /* Sets the background color to white */
+    border-radius: 50%; /* Makes the element round */
+    box-shadow: -42vw -4vh 0px 0px #fff, 25vw -41vh 0px 0px #fff, -20vw 49vh 0px 1px #fff, 5vw 40vh 1px 1px #fff, 29vw 19vh 1px 0px #fff, -44vw -13vh 0px 0px #fff, 46vw 41vh 0px 1px #fff, -3vw -45vh 0px 1px #fff, 47vw 35vh 1px 0px #fff, 12vw -8vh 1px 0px #fff, -34vw 48vh 1px 1px #fff, 32vw 26vh 1px 1px #fff, 32vw -41vh 1px 1px #fff, 0vw 37vh 1px 1px #fff, 34vw -26vh 1px 0px #fff, -14vw -49vh 1px 0px #fff, -12vw 45vh 0px 1px #fff, -44vw -33vh 0px 1px #fff, -13vw 41vh 0px 0px #fff, -36vw -11vh 0px 1px #fff, -23vw -24vh 1px 0px #fff, -38vw -27vh 0px 1px #fff, 16vw -19vh 0px 0px #fff, 28vw 33vh 1px 0px #fff, -49vw -4vh 0px 0px #fff, 16vw 32vh 0px 1px #fff, 36vw -18vh 1px 0px #fff, -25vw -30vh 1px 0px #fff, -23vw 24vh 0px 1px #fff, -2vw -35vh 1px 1px #fff, -25vw 9vh 0px 0px #fff, -15vw -34vh 0px 0px #fff, -8vw -19vh 1px 0px #fff, -20vw -20vh 1px 1px #fff, 42vw 50vh 0px 1px #fff, -32vw 10vh 1px 0px #fff, -23vw -17vh 0px 0px #fff, 44vw 15vh 1px 0px #fff, -40vw 33vh 1px 1px #fff, -43vw 8vh 0px 0px #fff, -48vw -15vh 1px 1px #fff, -24vw 17vh 0px 0px #fff, -31vw 50vh 1px 0px #fff, 36vw -38vh 0px 1px #fff, -7vw 48vh 0px 0px #fff, 15vw -32vh 0px 0px #fff, 29vw -41vh 0px 0px #fff, 2vw 37vh 1px 0px #fff, 7vw -40vh 1px 1px #fff, 15vw 18vh 0px 0px #fff, 25vw -13vh 1px 1px #fff, -46vw -12vh 1px 1px #fff, -18vw 22vh 0px 0px #fff, 23vw -9vh 1px 0px #fff, 50vw 12vh 0px 1px #fff, 45vw 2vh 0px 0px #fff, 14vw -48vh 1px 0px #fff, 23vw 43vh 0px 1px #fff, -40vw 16vh 1px 1px #fff, 20vw -31vh 0px 1px #fff, -17vw 44vh 1px 1px #fff, 18vw -45vh 0px 0px #fff, 33vw -6vh 0px 0px #fff, 0vw 7vh 0px 1px #fff, -10vw -18vh 0px 1px #fff, -19vw 5vh 1px 0px #fff, 1vw 42vh 0px 0px #fff, 22vw 48vh 0px 1px #fff, 39vw -8vh 1px 1px #fff, -6vw -42vh 1px 0px #fff, -47vw 34vh 0px 0px #fff, -46vw 19vh 0px 1px #fff, -12vw -32vh 0px 0px #fff, -45vw -38vh 0px 1px #fff, -28vw 18vh 1px 0px #fff, -38vw -46vh 1px 1px #fff, 49vw -6vh 1px 1px #fff, -28vw 18vh 1px 1px #fff, 10vw -24vh 0px 1px #fff, -5vw -11vh 1px 1px #fff, 33vw -8vh 1px 0px #fff, -16vw 17vh 0px 0px #fff, 18vw 27vh 0px 1px #fff, -8vw -10vh 1px 1px #fff;
+    animation: moveAndZoom 16s linear infinite; /* Applies a moving and zooming animation */
+}
+
+@keyframes moveAndZoom {
+    0% {
+        transform: scale(1) translate(0, 0); /* Start with normal scale and no translation */
+    }
+    50% {
+        transform: scale(1.5) translate(50px, 50px); /* Halfway, scale up and move */
+    }
+    100% {
+        transform: scale(1) translate(0, 0); /* End with normal scale and no translation */
+    }
+}
+
+.timeline {
+    position: relative;
+    margin: auto;
+    height: 5px;
+    width: 1145px;
+    background-color: white;
+    top: 100px
+}
+
+.timeline > .bigbang {
+    position: relative;
+    height: 100px;
+    width: 5px;
+    background-color: #8B0000;
+    top: -50px;
+}
+
+.timeline > .milkyway {
+    position: relative;
+    height: 100px;
+    width: 5px;
+    background-color: #8B0000;
+    left: 30px;
+    top: -150px;
+}
+
+.timeline > .solarsystem {
+    position: relative;
+    height: 100px;
+    width: 10px;
+    background-color: #6a6b6a;
+    left: 550px;
+    top: -250px;
+}
+
+.timeline > .solarsystem:hover {
+    background-color: rgb(141, 198, 151);
+}
+
+.solarsystem-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 120px;
+    position: relative;
+    left:680px;
+    top:110px;
+}
+
+.timeline > .lifebegins {
+    position: relative;
+    height: 100px;
+    width: 5px;
+    background-color: #8B0000;
+    left: 600px;
+    top: -350px;
+}
+
+.timeline > .dinosaurs {
+    position: relative;
+    height: 100px;
+    width: 10px;
+    background-color: #6a6b6a;
+    left: 850px;
+    top: -450px;
+}
+
+.timeline > .dinosaurs:hover {
+    background-color: rgb(141, 198, 151);
+}
+
+.dinosaurs-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 120px;
+    position: relative;
+    left:930px;
+    top:100px;
+}
+
+.timeline > .dinosaursgone {
+    position: relative;
+    height: 100px;
+    width: 10px;
+    background-color: #6a6b6a;
+    left: 930px;
+    top: -550px;
+}
+
+.timeline > .dinosaursgone:hover {
+    background-color: rgb(141, 198, 151);
+}
+
+.dinosaursgone-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 120px;
+    position: relative;
+    left:1040px;
+    top:-55px;
+}
+
+.timeline > .homosapiens {
+    position: relative;
+    height: 100px;
+    width: 10px;
+    background-color: #6a6b6a;
+    left: 1050px;
+    top: -650px;
+}
+
+.timeline > .homosapiens:hover {
+    background-color: rgb(141, 198, 151);
+}
+
+.homosapiens-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 100px;
+    position: relative;
+    left:1150px;
+    top:65px;
+}
+
+.timeline > .citystates {
+    position: relative;
+    height: 100px;
+    width: 10px;
+    background-color: #6a6b6a;
+    left: 1140px;
+    top: -750px;
+}
+
+.timeline > .citystates:hover {
+    background-color: rgb(141, 198, 151);
+}
+
+.citystates-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 90px;
+    position: relative;
+    left:1250px;
+    top: -80px;
+}
+
+.timelineHeader {
+    color: #fff;
+    position: relative;
+    width: 700px;
+    left: 600px;
+    top: 150px;
+}
+
+
+.solar-system-header {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: x-small;
+    position: relative;
+    width: 600px;
+    left:100px;
+    top:400px;
+}
+
+.solar-system-body {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 15px;
+    position: relative;
+    left:70px;
+    top:395px;
+    width: 600px;
+}
+
+.dinosaurs-header {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: x-small;
+    position: relative;
+    width: 600px;
+    left:100px;
+    top:400px;
+}
+
+.dinosaurs-body {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 15px;
+    position: relative;
+    left:70px;
+    top:395px;
+    width: 600px;
+}
+
+.dinosaursgone-header {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: x-small;
+    position: relative;
+    width: 600px;
+    left:100px;
+    top:400px;
+}
+
+.dinosaursgone-body {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 15px;
+    position: relative;
+    left:70px;
+    top:395px;
+    width: 600px;
+}
+
+.homosapiens-header {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: x-small;
+    position: relative;
+    width: 600px;
+    left:100px;
+    top:400px;
+}
+
+.homosapiens-body {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 15px;
+    position: relative;
+    left:70px;
+    top:395px;
+    width: 600px;
+}
+
+.citystates-header {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: x-small;
+    position: relative;
+    width: 600px;
+    left:100px;
+    top:400px;
+}
+
+.citystates-body {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 15px;
+    position: relative;
+    left:70px;
+    top:395px;
+    width: 600px;
+}
+
+.img1 {
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    top: 120px;
+    left: 700px;
+}
+
+.img2 {
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    top: 120px;
+    left: 700px;
+}
+
+.img3 {
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    top: 120px;
+    left: 700px;
+}
+
+.img4 {
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    top: 89px;
+    left: 700px;
+}
+
+.img5 {
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    top: 120px;
+    left: 700px;
+}
+
+.bigbang-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 100px;
+    position: relative;
+    left:120px;
+    top:140px;
+}
+
+.milkyway-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 100px;
+    position: relative;
+    left:180px;
+    top:10px;
+}
+
+.lifebegins-timeline-text {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;
+    font-size: 12px;
+    height: 0px;
+    width: 100px;
+    position: relative;
+    left:750px;
+    top:10px;
+}

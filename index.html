@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Timeline of our Universe </title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="Ege Yesilyurt" />
+
+        <!-- css -->
+        <link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <script src="main.js"></script>
+
+        <div class="main"></div>
+
+        <div class="timeline">
+            <div class="bigbang"></div>
+            <div class="milkyway"></div>
+            <div id="1" class="solarsystem" onclick="goToText(1)"></div>
+            <div class="lifebegins"></div>
+            <div id="2" class="dinosaurs" onclick="goToText(2)"></div>
+            <div id="3" class="dinosaursgone" onclick="goToText(3)"></div>
+            <div id="4" class="homosapiens" onclick="goToText(4)"></div>
+            <div id="5"class="citystates" onclick="goToText(5)"></div>
+        </div>
+        
+        <div class="bigbang-timeline-text">
+            <p>
+                Big Bang happens
+                <br>
+                (13.8 Billion years ago)
+            </p>
+        </div>
+
+        <div class="milkyway-timeline-text">
+            <p>
+                Milky Way starts forming
+                <br>
+                (13.6 Billion years ago)
+            </p>
+        </div>
+
+        <div class="lifebegins-timeline-text">
+            <p>
+                Life Begins
+                <br>
+                (3.5-4.1 Billion years ago)
+            </p>
+        </div>
+
+        <div class="solarsystem-timeline-text">
+            <p>
+                Solar System forms
+                <br>
+                (4.6 Billion years ago)
+            </p>
+        </div>
+
+        <div class="dinosaurs-timeline-text">
+            <p>
+                First Dinosaurs
+                <br>
+                (240 Million years ago)
+            </p>
+        </div>
+
+        <div class="dinosaursgone-timeline-text">
+            <p>
+                Dinosaur Extinction
+                <br>
+                (66 Million years ago)
+            </p>
+        </div>
+
+        <div class="homosapiens-timeline-text">
+            <p>
+                Homosapiens appear
+                <br>
+                (300 Thousand years ago)
+            </p>
+        </div>
+
+        <div class="citystates-timeline-text">
+            <p>
+                First city-states
+                <br>
+                (6000 years ago)
+            </p>
+        </div>
+        
+        <div class="timelineHeader">
+            <h1>Timeline of our Universe</h1>
+            <p>Click on the 5 chosen timelines to learn more</p>
+        </div>
+        
+
+
+    <div id="solarsystem-wrapper" style="display:none">
+
+        <div class="solar-system-header">
+            <h1>Solar System forms (4.6 Billion years ago)</h1>
+        </div>
+        <div class="solar-system-body">
+            <p1>About 4.6 billion years ago, a revolving cloud of gas and dust called the solar nebula gave rise to the Solar System. 
+                The Sun at its core and the planets orbiting it, including Earth, were created as a result of this process.
+                <br> <br>
+                The processes that resulted in the formation of the Solar System are described in Cameron's (1962) fundamental model of the solar nebula hypothesis. 
+                This groundbreaking study sheds light on the early circumstances and processes that led to the coalescence of gas and dust into the Sun and its planetary system. 
+                Even though Cameron's model has been improved and extended by subsequent studies, this work is still essential to our comprehension of how the Solar System formed.
+                <br><br>
+                Cameron, A. G. W. "Formation of the Solar Nebula." Icarus (1963), vol. 1, no. 1-6, 1962, pp. 13-16.
+            </p1>
+            <a href="https://www.sciencedirect.com/science/article/pii/0019103562900337">Link to the Article</a>
+            </a>
+        </div>
+        <div class="solar-system-imgs">
+            <img class="img1" src="img/solar-system-forms.png" alt="Solar System Forms">
+        </div>
+
+    </div>
+
+    <div id="dinosaurs-wrapper" style="display:none">
+
+        <div class="dinosaurs-header">
+            <h1>First Dinosaurs appear (240 Million years ago)</h1>
+        </div>
+        <div class="dinosaurs-body">
+            <p1>About 240 million years ago, in the late Triassic period, dinosaurs made their initial appearance. 
+                Dinosaurs dominated the planet for more than 160 million years during this period of major evolutionary change, which had a dramatic impact on Earth's ecosystems.
+                <br><br>
+                A thorough analysis of the early evolution and diversification of dinosaurs is provided by Brusatte et al. (2010). 
+                The origins and early radiation of dinosaurs are explained in this work by combining phylogenetic data and fossil evidence, giving a thorough account of the dinosaurs' ascent during the Triassic period. 
+                It is an essential tool for comprehending the ecological significance and evolutionary background of early dinosaurs.
+                <br><br>
+                Brusatte, S. L., Benton, M. J., Desojo, J. B., & Langer, M. C. (2010). The origin and early radiation of dinosaurs. Earth-Science Reviews, 101(1-2), 68-100.
+                <a href="https://bpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/5/537/files/2019/07/2010BrusatteESR.pdf">Link to the Article</a>
+            </p1>
+        </div>
+        <div class="dinosaurs-imgs">
+            <img class="img2" src="img/dinosaurs.jpg" alt="Solar System Forms">
+        </div>
+    
+    </div>
+
+    <div id="dinosaursgone-wrapper" style="display:none">
+    
+        <div class="dinosaursgone-header">
+            <h1>Dinosaur Extinction (66 Million years ago)</h1>
+        </div>
+        <div class="dinosaursgone-body">
+            <p1>Dinosaurs and numerous other species went extinct during the Cretaceous-Paleogene (K-Pg) extinction event, which was brought on by a devastating asteroid strike some 66 million years ago. 
+                Mammals became the dominating terrestrial creatures as a result of this occurrence.
+                <br><br>
+                Alvarez et al. (1980) provide the groundbreaking evidence linking an asteroid impact to the Cretaceous-Paleogene extinction event. 
+                This paper introduced the hypothesis that a high concentration of iridium at the K-Pg boundary was due to an extraterrestrial impact, revolutionizing our understanding of mass extinction events.
+                It is widely regarded as one of the most influential papers in paleontology and planetary science.
+                <br><br>
+                Alvarez, L. W., Alvarez, W., Asaro, F., & Michel, H. V. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. Science, 208(4448), 1095-1108.
+                <a href="https://www.science.org/doi/10.1126/science.208.4448.1095">Link to the Article</a>
+            </p1>
+        </div>
+        <div class="dinosaursgone-imgs">
+            <img class="img3" src="img/dinosaursgone.jpg" alt="Solar System Forms">
+        </div>
+    
+    </div>
+
+    <div id="homosapiens-wrapper" style="display:none">
+    
+        <div class="homosapiens-header">
+            <h1>Homosapiens appear (300 Thousand years ago)</h1>
+        </div>
+        <div class="homosapiens-body">
+            <p1>The species to which all contemporary humans belong, Homo sapiens, originated in Africa some 300,000 years ago. 
+                Significant improvements in tool use, culture, and social organization characterize this rise.
+                <br><br>
+                The age of Homo sapiens has been pushed back to around 300,000 years ago by the finding of new fossils from Jebel Irhoud, Morocco, as reported by Hublin et al. (2017). This study offers important proof of our species' early existence and broad geographic range, pointing to a multifaceted and pan-African origin. 
+                The results have important ramifications for how we think about human evolution.
+                <br><br>
+                Hublin, J. J., Ben-Ncer, A., Bailey, S. E., Freidline, S. E., Neubauer, S., Skinner, M. M., Bergmann, I., Le Cabec, A., Benazzi, S., Harvati, K., & Gunz, P. (2017). New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens. Nature, 546(7657), 289-292.
+                <a href="https://www.nature.com/articles/nature22336">Link to the Article</a>
+            </p1>
+        </div>
+        <div class="homosapiens-imgs">
+            <img class="img4" src="img/homosapiens.jpg" alt="Solar System Forms">
+        </div>
+    
+    </div>
+
+    <div id="citystates-wrapper" style="display:none">
+
+        <div class="citystates-header">
+            <h1>First city-states form (6000 years ago)</h1>
+        </div>
+        <div class="citystates-body">
+            <p1>About 6000 years ago, the first city-states appeared in what is now Iraq, in the Mesopotamian region. 
+                The foundation of modern civilization was laid by the sophisticated social structures, economy, and technology that these early urban centers built.
+                <br><br>
+                The growth and impact of the Uruk civilization in early Mesopotamia are examined by Algaze (1989). 
+                This paper presents the idea of the Uruk global system, emphasizing the ways in which cultural and economic exchanges fueled the emergence of the first city-states. 
+                It offers a thorough examination of the elements influencing urbanization and the emergence of complex societies, making it an essential resource for comprehending the early stages of state creation.
+                <br><br>
+                Algaze, G. (1989). The Uruk world system: The dynamics of expansion of early Mesopotamian civilization. Current Anthropology, 30(5), 571-608.
+                <a href="https://www.jstor.org/stable/530106">Link to the Article</a>
+            </p1>
+        </div>
+        <div class="citystates-imgs">
+            <img class="img5" src="img/citystates.jpg" alt="Solar System Forms">
+        </div>
+    
+    </div>
+
+    </body>
+</html>
