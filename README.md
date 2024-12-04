@@ -1,5 +1,6 @@
 # TooU
 Timeline of our Universe Project
+https://egeyesss.github.io/TooU/
 
 This is a small quick website I made for an elective astronomy course that I took.
 
